@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textViewStyleMedium" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/s_14sp</item>
+        <item name="android:padding">@dimen/d_5dp</item>
+        <!--<item name="android:textColor">@color/appblack</item>-->
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="textViewStyleSmall" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:textColor">@color/appblack</item>-->
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/s_10sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="textViewStyleLarge" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:textColor">@color/appblack</item>-->
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+  <!--  <dimen name="s_15sp">15sp</dimen>
+    <dimen name="s_10sp">10sp</dimen>
+    <dimen name="s_13sp">13sp</dimen>-->
+</resources>

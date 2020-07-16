@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+     >
+
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginTop="@dimen/_15sdp">
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_dark_background" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutLastNane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputTextLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_dark_background" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:capitalize="characters"
+
+                    android:digits="1234567890"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutPasswordConform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditPasswordConform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="1234567890"
+                    android:capitalize="characters"
+
+                    android:imeOptions="actionNext"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_dark_background" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_dark_background" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+
+                android:background="@color/cardview_dark_background" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/appCompatButtonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:text="SignUp"
+                android:textColor="@color/text_color_white"
+                android:textStyle="bold" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

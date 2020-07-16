@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/light_gray"
+
+    android:elevation="5dp">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp">
+
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold"></TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold"></TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold"></TextView>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </TableRow>
+
+            </TableLayout>
+
+  <RelativeLayout
+                android:id="@+id/imagelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/table"
+                android:background="@drawable/android_gradient_list">
+
+
+                <TextView
+                    android:id="@+id/book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:text="Remaining Time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    />
+
+
+
+
+                <TextView
+
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:gravity="center"
+                    android:text="CANCELLED"
+                    android:id="@+id/cancel"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/textlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/imagelayout">
+
+                <LinearLayout
+                    android:id="@+id/qqq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:text="Parking Name  :"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/parkingName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_weight="1.1"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vehicleNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qqq"
+                    android:text="Parking Name"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/bookingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vehicleNo"
+                    android:text="Parking Name"
+                    android:textColor="@color/text_color_light_black" />
+
+            </RelativeLayout>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold"></TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold"></TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold"></TextView>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="•"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolBar"
+        android:layout_weight="1.0"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bfbfbf"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/webviewp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/llBottom"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:id="@+id/llBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_background"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <Button
+                        android:id="@+id/cancelBooking"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="@dimen/d_5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="Cancel Booking"
+                        android:textColor="@color/text_color_white" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolBar"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/privacy"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/policy"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+
+                <TextView
+                    android:id="@+id/collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/policy"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Information Collectiona and Use"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/Collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/collection"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/Collection"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/Log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Collection"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Log Data"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Log"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/data"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/Cookies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/data"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Cookies"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/cookies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Cookies"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/cookies"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/Security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cookies"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Security"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Security"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/security"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/Links_to_Other_Sites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/security"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Links to OtherSites"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/Links_to_OtherSites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Links_to_Other_Sites"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/Links_to_OtherSites"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/Childrens_Privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Links_to_OtherSites"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Children’s Privacy"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/Children_Privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Childrens_Privacy"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/Children_Privacy"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+                <TextView
+                    android:id="@+id/Changes_to_This_Privacy_Policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Children_Privacy"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Changes to This Privacy Policy"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/Changes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Changes_to_This_Privacy_Policy"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/Changes"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_color_light_black" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+    -->
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="in.user.policy.Refund_and_cancellation">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolBar"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/returnqw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Returns"
+                    android:textColor="@color/text_color_light_black"
+                    android:textStyle="bold" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/returnqw"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="We do not provide return &amp; refund policy, however if the if we cannot provide you with parking services we will refund your whole amount. Refund will be processed through same mode within 10 working days
+
+    Opark makes best possible efforts to provide quality service."
+                    android:textColor="@color/text_color_light_black" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+    -->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_camera"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Import"
+        android:visible="false" />
+    <item
+        android:id="@+id/nav_update_profile"
+        android:icon="@drawable/update_profile"
+        android:title="Update Profile" />
+    <item
+        android:id="@+id/nav_receipt"
+        android:icon="@drawable/receipt"
+        android:title="My Receipt" />
+
+    <item
+        android:id="@+id/nav_about_us"
+        android:icon="@drawable/about"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/nav_Contact_us"
+        android:icon="@drawable/contact"
+        android:title="Contact Us" />
+
+    <item
+        android:id="@+id/nav_Privacy_policy"
+        android:icon="@drawable/privacy_policy"
+        android:title="Privacy policy" />
+
+
+    <item
+        android:id="@+id/nav_Terms_and_condition"
+        android:icon="@drawable/termsncondition"
+        android:title="Terms and condition" />
+
+
+    <item
+        android:id="@+id/nav_Refund_and_cancellation"
+        android:icon="@drawable/refund"
+        android:title="Refund and cancellation" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:title="Log Out" />
+
+</menu>

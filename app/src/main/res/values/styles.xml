@@ -1,0 +1,53 @@
+<resources>
+
+   <!-- &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionBarThemeDark" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlHighlight">#3fff</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

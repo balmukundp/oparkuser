@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <include
+        layout="@layout/toolbar_with_imageview"
+        android:layout_marginRight="@dimen/_10sdp"
+        tools:ignore="IncludeLayoutParam" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottom"
+            tools:context="oparkuser.oparkuser.MainActivity" />
+
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_color_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llAvailableSpot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    style="@style/textViewStyleLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/d_10dp"
+                    android:textColor="@color/text_color_light_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <TextView
+                        style="@style/textViewStyleMedium"
+                        android:layout_width="@dimen/d_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/available_slots"
+                        android:textColor="@color/text_color_light_black" />
+
+                    <TextView
+                        style="@style/textViewStyleMedium"
+                        android:layout_width="@dimen/d_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/distance"
+                        android:textColor="@color/text_color_light_black" />
+
+                    <TextView
+                        style="@style/textViewStyleMedium"
+                        android:layout_width="@dimen/d_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Time to travel"
+                        android:textColor="@color/text_color_light_black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvAvailableSlots"
+                        style="@style/textViewStyleMedium"
+                        android:layout_width="@dimen/d_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_light_black" />
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        style="@style/textViewStyleMedium"
+                        android:layout_width="@dimen/d_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_light_black" />
+
+
+                    <TextView
+                        android:id="@+id/tvTimeToTravel"
+                        style="@style/textViewStyleMedium"
+                        android:layout_width="@dimen/d_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_light_black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/refe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/refresh"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/refresh" />
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:background="@color/color_blue" />
+
+                <TextView
+
+                    android:id="@+id/book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="BOOK NOW"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

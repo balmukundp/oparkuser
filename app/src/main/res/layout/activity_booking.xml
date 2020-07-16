@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:clickable="true"
+    android:id="@+id/layoutbooking"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvAvailableSpots"
+                    style="@style/textViewStyleLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/d_5dp"
+                    android:text="--" />
+
+                <TextView
+                    android:id="@+id/tvTotalSpots"
+                    style="@style/textViewStyleLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/d_5dp"
+                    android:text="--" />
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/twowheeler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:text="Two Wheeler"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+
+                <RadioButton
+                    android:id="@+id/fourwheeler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d_5dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/d_5dp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:text="Four Wheeler"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:minLines="10"
+                    android:textColor="@color/text_color_light_black" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/etMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_marginTop="@dimen/d_15dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:hint="@string/enter_mobile_no"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etVehicleNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:background="@android:color/white"
+                android:digits="QWERTZUIOPASDFGHJKLYXCVBNM1234567890"
+                android:gravity="center"
+                android:hint="@string/enter_vehicle_no"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="@dimen/d_5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/s_14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:hint="Date"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/etTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:hint="@string/enter_Time"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="@dimen/_14sdp" />
+
+            <requestFocus />
+
+            <LinearLayout
+                android:id="@+id/star"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toRightOf="@+id/dot"
+                        android:text="   Booked slots"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/dot1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_toRightOf="@+id/dot1"
+                        android:text=" @string/available_spots"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutVehicleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditVehicleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="QWERTZUIOPASDFGHJKLYXCVBNMqwertzuopasdfghjklxcvbnm1234567890"
+                    android:hint="Vehicle Number"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="@dimen/_15sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/two_wheeler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/four_wheeler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_color_red"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <Button
+
+                android:id="@+id/btnCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/d_35dp"
+                android:background="@drawable/button_background"
+                android:text="BOOK NOW"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

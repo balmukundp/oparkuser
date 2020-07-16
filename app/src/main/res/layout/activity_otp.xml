@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:gravity="center_vertical|left"
+        android:text="Enter one time password sent to your mobile number"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15sdp" />
+
+    <RelativeLayout
+        android:id="@+id/normalUserVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pin1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:capitalize="characters"
+            android:gravity="center"
+            android:hint="000000"
+
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textSize="@dimen/_19sdp" />
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_background" />
+
+        <EditText
+            android:id="@+id/pin2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_73sdp"
+            android:layout_weight="1"
+
+            android:background="@android:color/white"
+            android:capitalize="characters"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="@dimen/_19sdp"
+
+
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_background" />
+
+        <EditText
+            android:id="@+id/pin3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_73sdp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:capitalize="characters"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="@dimen/_19sdp"
+
+
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_background" />
+
+        <EditText
+            android:id="@+id/pin4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_73sdp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:capitalize="characters"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="@dimen/_19sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/normalUserVehicle"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:clickable="true"
+        android:background="@drawable/ext_link_selector_bg"
+        android:text="Resend OTP"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resend_otp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonCancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/normalUserVehicle"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Cancle"
+            android:textColor="@color/text_color_white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatButton
+
+            android:id="@+id/appCompatButtonverifyOtp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:background="@drawable/button_background"
+            android:text="Verify"
+            android:textColor="@color/text_color_white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

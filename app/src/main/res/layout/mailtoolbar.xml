@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_45dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/d_5dp">
+
+    <ImageView
+        android:id="@+id/ivToggle"
+        android:layout_width="@dimen/d_30dp"
+        android:layout_height="@dimen/d_30dp"
+        android:padding="@dimen/d_5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/oparklogonew" />
+
+
+    <TextView
+        android:id="@+id/tvTitleToolbar"
+        style="@style/textViewStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:inputType="textCapWords"
+        android:layout_toLeftOf="@+id/ivEdit"
+        android:layout_toRightOf="@+id/ivToggle"
+        android:textColor="@color/text_color_white" />
+    <!--android:layout_marginLeft="-30dp"-->
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/d_30dp"
+        android:layout_height="@dimen/d_30dp"
+        android:padding="@dimen/d_5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/oparklogonew" />
+
+</RelativeLayout>
