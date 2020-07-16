@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Oparkuser.iml" filepath="$PROJECT_DIR$/.idea/Oparkuser.iml" group="Oparkuser" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Oparkuser/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oparkuser.iml" filepath="$PROJECT_DIR$/.idea/modules/oparkuser.iml" group="oparkuser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/oparkuser-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/oparkuser-app.iml" group="oparkuser/app" />
     </modules>
   </component>
 </project>

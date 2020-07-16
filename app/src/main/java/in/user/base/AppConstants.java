@@ -32,7 +32,7 @@ import java.util.regex.Pattern;
 public class AppConstants {
 
 
-   // public static final String BASEURL = "https://opark.in/O_par_aPi/userapp/live/index.php/v1/";//live
+
     public static final String BASEURL = "https://opark.in/O_par_aPi/userapp/live/index.php/v2/";//live date 29/11/2018 update(cluster function add)
  //   public static final String BASEURL = "https://opark.in/O_par_aPi/userapp/stg/index.php/v1/";//stg
 
